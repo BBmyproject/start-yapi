@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <main className="bg-white">
       <section
-        className="px-4 md:px-10 pt-18 md:pt-25 pb-16 md:pb-20"
+        className="px-4 md:px-10 pt-19 md:pt-25 pb-16 md:pb-20"
         aria-labelledby="projects-heading"
       >
         <h1

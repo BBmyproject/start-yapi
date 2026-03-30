@@ -30,12 +30,12 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   return (
     <main className="bg-white">
-      <div className="px-10 pt-25 pb-10 h-screen">
+      <div className="px-4 md:px-10 pt-19 md:pt-25 pb-10 md:pb-16 h-screen">
         <div className="relative w-full overflow-hidden rounded-2xl h-full">
           <img
             src={project.image}
             alt={project.imageAlt}
-            className="lazy object-cover"
+            className="lazy object-cover h-full w-full"
           />
           <div
             className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.65),transparent_55%)]"
@@ -49,7 +49,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         </div>
       </div>
 
-      <article className="px-10 pb-20 md:pb-25">
+      <article className="px-4 md:px-10 pb-10 md:pb-20 md:pb-25">
 
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-start">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

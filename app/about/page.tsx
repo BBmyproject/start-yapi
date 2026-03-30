@@ -53,7 +53,7 @@ export default function AboutPage() {
   return (
     <main className="bg-white">
       <section
-        className="px-4 md:px-10 pt-18 md:pt-25 pb-6 md:pb-10 lg:h-screen"
+        className="px-4 md:px-10 pt-19 md:pt-25 pb-6 md:pb-10 lg:h-screen"
         aria-labelledby="about-page-hero-heading"
       >
         <div className="grid lg:grid-cols-2 lg:items-start gap-12 lg:gap-4 h-full">

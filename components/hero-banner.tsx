@@ -6,7 +6,7 @@ const heroImage =
 
 export function HeroBanner() {
   return (
-    <section className="relative md:h-screen w-full overflow-hidden pt-18 md:pt-25 px-4 md:px-10 pb-10 ">
+    <section className="relative md:h-screen w-full overflow-hidden pt-19 md:pt-25 px-4 md:px-10 pb-10 ">
       <div className="relative z-10 flex md:flex-row flex-col h-full w-full rounded-2xl">
         <img
           src={heroImage}

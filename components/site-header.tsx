@@ -40,7 +40,7 @@ export function SiteHeader() {
             alt="Start Yapı"
             width={180}
             height={48}
-            className="h-14 w-auto"
+            className="h-9 md:h-14 w-auto"
           />
         </Link>
 
