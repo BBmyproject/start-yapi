@@ -22,7 +22,7 @@ const panels: Record<
 > = {
   "alt-yapi": {
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000",
+      "images/alt-yapi.jpg",
     imageAlt: "Şantiyede temel ve betonarme çalışması",
     cardTitle: "Sağlam temel, güvenli ilerleyiş",
     cardBody:
@@ -30,7 +30,7 @@ const panels: Record<
   },
   "ust-yapi": {
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000",
+      "images/lotus-1.jpeg",
     imageAlt: "Üst yapı inşaatı ve iskele görünümü",
     cardTitle: "Taşıyıcı sistemden cepheye kadar",
     cardBody:
@@ -38,7 +38,7 @@ const panels: Record<
   },
   gorsel: {
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=2000",
+      "images/3d.jpg",
     imageAlt: "Modern iç mekan ve mimari görselleştirme",
     cardTitle: "Fikrinizi net ve ikna edici görsellere dönüştürün",
     cardBody:

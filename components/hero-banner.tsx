@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000";
+  "/images/bati-1.jpeg";
 
 export function HeroBanner() {
   return (

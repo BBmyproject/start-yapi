@@ -2,7 +2,6 @@
 
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import type { ProjectImage } from "@/data/projects";
 
@@ -43,12 +42,12 @@ export function ProjectFloorPlansFancybox({ plans }: Props) {
           data-caption={plan.alt}
           className="relative block aspect-3/4 cursor-pointer overflow-hidden rounded-xl bg-[#f5f5f5] outline-none transition-opacity hover:opacity-95 focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
         >
-          <Image
+          <img
             src={plan.src}
             alt={plan.alt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, 33vw"
+            loading="lazy"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover"
           />
         </a>
       ))}
