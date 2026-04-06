@@ -27,27 +27,67 @@ export default function ContactPage() {
 
         <div className="mt-10 grid lg:grid-cols-2 gap-6 lg:gap-4 lg:items-start">
           <div className="order-2 md:order-1">
-            <div>
-              <div>
-                <p className="mt-2 max-w-md text-base text-[#616161] transition-all hover:text-black">
-                  {siteContact.addressLine1}
-                  {siteContact.addressLine2}
-                </p>
-              </div>
-              <div>
+            <div className="max-w-md space-y-8 text-base text-[#616161]">
+
+              <address className="space-y-8 not-italic">
+                <div>
+                  <h2 className="text-lg font-medium tracking-tight text-black">
+                    {siteContact.headquarters.label}
+                  </h2>
+                  <p className="mt-3 leading-relaxed">
+                    {siteContact.headquarters.name}
+                    <br />
+                    {siteContact.headquarters.line1}
+                    <br />
+                    {siteContact.headquarters.line2}
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-lg font-medium tracking-tight text-black">
+                    {siteContact.branch.label}
+                  </h2>
+                  <p className="mt-3 leading-relaxed">
+                    {siteContact.branch.line1}
+                    <br />
+                    {siteContact.branch.line2}
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-lg font-medium tracking-tight text-black">
+                    {siteContact.salesOffice.label}
+                  </h2>
+                  <p className="mt-3 leading-relaxed">
+                    {siteContact.salesOffice.line1}
+                    <br />
+                    {siteContact.salesOffice.line2}
+                  </p>
+                </div>
+              </address>
+
+              <div className="space-y-1">
                 <a
                   href={siteContact.phoneHref}
-                  className="mt-2 inline-block text-[#616161] transition-all hover:text-black"
+                  className="inline-block transition-colors hover:text-black"
                 >
                   {siteContact.phoneDisplay}
                 </a>
-              </div>
-              <div>
+                <br />
                 <a
                   href={siteContact.emailHref}
-                  className="mt-2 inline-block text-[#616161] transition-all hover:text-black"
+                  className="inline-block transition-colors hover:text-black"
                 >
                   {siteContact.email}
+                </a>
+                <br />
+                <a
+                  href={siteContact.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block transition-colors hover:text-black"
+                >
+                  WhatsApp ile yazın
                 </a>
               </div>
             </div>

@@ -30,6 +30,19 @@ const valueCards = [
   },
 ];
 
+const leadershipTeam = [
+  {
+    name: "Ahmet Baran Özcan",
+    imageSrc: "/images/yonetim-ahmet-baran-ozcan.jpg",
+    imageAlt: "Ahmet Baran Özcan",
+  },
+  {
+    name: "Mustafa Veysi Özcan",
+    imageSrc: "/images/yonetim-mustafa-veysi-ozcan.jpg",
+    imageAlt: "Mustafa Veysi Özcan",
+  },
+] as const;
+
 const extraValueCards = [
   {
     title: "İnovasyon ve süreklilik",
@@ -153,6 +166,37 @@ export default function AboutPage() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section
+        className="px-4 md:px-10 pb-19 md:pb-25 pt-4 md:pt-6"
+        aria-labelledby="about-leadership-heading"
+      >
+        <h2
+          id="about-leadership-heading"
+          className="text-3xl md:text-4xl tracking-tight text-black text-center"
+        >
+          Yönetici kadromuz
+        </h2>
+        <ul className="max-w-4xl mx-auto mt-10 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:gap-10">
+          {leadershipTeam.map((person) => (
+            <li key={person.name}>
+              <article className="flex flex-col gap-4">
+                <div className="relative aspect-4/5 w-full overflow-hidden rounded-2xl bg-[#f5f5f5]">
+                  <img
+                    src={person.imageSrc}
+                    alt={person.imageAlt}
+                    className="h-full w-full object-cover object-top"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+                <p className="text-xl font-medium tracking-tight text-black md:text-2xl">
+                  {person.name}
+                </p>
+              </article>
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   );

@@ -102,11 +102,11 @@ export const projects: Project[] = [
       { label: "Otopark:", value: "Açık ve kapalı" },
       {
         label: "İletişim:",
-        value: "0545 505 00 55 · 0543 887 64 39",
+        value: "0545 505 00 55",
       },
     ],
     body:
-      "Giresun Bulancak’ta, hayalinizdeki deniz kenarı yaşamı Lotus Harman Evleri ile buluşuyor. Şehrin en prestijli bölgelerinden Pazarsuyu’nda konumlanan bu lüks daireler, eşsiz deniz manzarası ve çağdaş mimarisiyle hem yaşam kalitesi hem yatırım değeri sunuyor. Baştan sona modern ve kaliteli iç mimari, ferah ve aydınlık odalarla günlük konfor ön plandadır.\n\nSahile yürüme mesafesindeki konumu, market, okul ve günlük ihtiyaç noktalarına yakınlığı ile huzurlu bir yaşam alanı vaat eder. Prestijli bir yuva ve yüksek yatırım potansiyelini bir arada arayanlar için özel bir fırsat. Detaylı bilgi ve randevu için iletişime geçebilirsiniz: 0545 505 00 55 veya 0543 887 64 39.\n\nŞube: İhsaniye Mah. Uğur Mumcu Cad. No:44/A, Bulancak. Satış ofisi: Güzelyalı Mah. Turkuaz Sok. No:4.",
+      "Giresun Bulancak’ta, hayalinizdeki deniz kenarı yaşamı Lotus Harman Evleri ile buluşuyor. Şehrin en prestijli bölgelerinden Pazarsuyu’nda konumlanan bu lüks daireler, eşsiz deniz manzarası ve çağdaş mimarisiyle hem yaşam kalitesi hem yatırım değeri sunuyor. Baştan sona modern ve kaliteli iç mimari, ferah ve aydınlık odalarla günlük konfor ön plandadır.\n\nSahile yürüme mesafesindeki konumu, market, okul ve günlük ihtiyaç noktalarına yakınlığı ile huzurlu bir yaşam alanı vaat eder. Prestijli bir yuva ve yüksek yatırım potansiyelini bir arada arayanlar için özel bir fırsat. Detaylı bilgi ve randevu için iletişime geçebilirsiniz: 0545 505 00 55.\n\nŞube: İhsaniye Mahallesi, Uğur Mumcu Caddesi No:43/A, Bulancak, Giresun. Satış ofisi: Güzelyalı Mahallesi, Turkuaz Sokak No:1/1, Bulancak, Giresun.",
     floorPlans: Array.from({ length: 5 }, (_, i) => ({
       src: `/images/lotus-harman-kat-${i + 1}.jpeg`,
       alt: `Lotus Harman Evleri kat planı ${i + 1}`,

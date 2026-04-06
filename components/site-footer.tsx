@@ -14,25 +14,11 @@ const navItems = [
 const socialLinks = [
   {
     name: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/startyapiend.as/",
     icon: (
       <PiInstagramLogo className="w-6 h-6" />
     ),
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com",
-    icon: (
-      <PiLinkedinLogo className="w-6 h-6" />
-    ),
-  },
-  {
-    name: "Facebook",
-    href: "https://facebook.com",
-    icon: (
-      <TiSocialFacebook className="w-6 h-6" />
-    ),
-  },
+  }
 ];
 
 export function SiteFooter() {
@@ -57,12 +43,17 @@ export function SiteFooter() {
             Start Yapı Endüstrisi Anonim Şirketi
           </p>
 
-          <div className="max-w-md space-y-2 leading-relaxed text-[#616161]">
-            <p>
-              {siteContact.addressLine1}
-              <br />
-              {siteContact.addressLine2}
-            </p>
+          <div className="max-w-md space-y-4 leading-relaxed text-[#616161]">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wide text-black/70">
+                {siteContact.branch.label}
+              </p>
+              <p className="mt-1">
+                {siteContact.branch.line1}
+                <br />
+                {siteContact.branch.line2}
+              </p>
+            </div>
             <p>
               <a
                 href={siteContact.phoneHref}

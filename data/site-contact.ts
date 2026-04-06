@@ -1,13 +1,38 @@
-/** Merkezi iletişim bilgisi — footer ve /contact sayfası */
+/** Merkezi iletişim bilgisi — footer, /contact ve WhatsApp */
 export const siteContact = {
   companyLine: "Start Yapı Endüstrisi Anonim Şirketi",
-  addressLine1: "Kemaliye Mah. İnönü Cad. No: 12/A",
-  addressLine2: "Bulancak / Giresun",
-  phoneDisplay: "+90 (454) 300 00 00",
-  phoneHref: "tel:+904543000000",
-  email: "info@startyapi.com.tr",
-  emailHref: "mailto:info@startyapi.com.tr",
-  /** Google Haritalar “paylaş → haritayı yerleştir” ile güncellenebilir */
+
+  headquarters: {
+    label: "Merkez",
+    name: "Start Yapı Merkez",
+    line1: "Şehit Mustafa Doğan Caddesi 29/C- 28",
+    line2: "Çankaya, Ankara",
+  },
+
+  branch: {
+    label: "Şube",
+    line1: "İhsaniye Mahallesi, Uğur Mumcu Caddesi No:43/A",
+    line2: "Bulancak, Giresun",
+  },
+
+  salesOffice: {
+    label: "Satış Ofisi",
+    line1: "Güzelyalı Mahallesi, Turkuaz Sokak No:1/1",
+    line2: "Bulancak, Giresun",
+  },
+
+  /** Konut satışı yalnızca Giresun’da */
+  salesRegionNote:
+    "Konut satışlarımız yalnızca Giresun ilinde gerçekleştirilmektedir.",
+
+  phoneDisplay: "0545 505 00 55",
+  phoneHref: "tel:+905455050055",
+  whatsappHref: "https://wa.me/905455050055",
+
+  email: "info@startyapi.com",
+  emailHref: "mailto:info@startyapi.com",
+
+  /** Google Haritalar — satış ofisi yakını */
   mapsEmbedUrl:
-    "https://www.google.com/maps?q=Bulancak+Giresun+T%C3%BCrkiye&z=15&hl=tr&output=embed",
+    "https://www.google.com/maps?q=G%C3%BCzelyal%C4%B1+Mah.+Turkuaz+Sok.+Bulancak+Giresun&z=16&hl=tr&output=embed",
 } as const;
